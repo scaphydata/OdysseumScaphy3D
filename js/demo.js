@@ -139,27 +139,37 @@ function runDemo(canvasId) {
         // On associe l'URL à la boîte
         box.metadata = { url: positions[i].url };
 
-        // Ajout d'un ActionManager pour gérer le clic
-        box.actionManager = new BABYLON.ActionManager(scene);
-        box.actionManager.registerAction(new BABYLON.ExecuteCodeAction(BABYLON.ActionManager.OnPickTrigger, function (evt) {
-            var url = evt.source.metadata.url;
-            if (url) {
-                window.open(url, "_blank");
-            }
-        }));
-    }
+    // Ajout d'un ActionManager pour gérer le clic
+    box.actionManager = new BABYLON.ActionManager(scene);
+    box.actionManager.registerAction(new BABYLON.ExecuteCodeAction(BABYLON.ActionManager.OnPickTrigger, function (evt) {
+        var url = evt.source.metadata.url;
+        if (url) {
+            window.open(url, "_blank");
+        }
+    }));
+}
 
-    // Changement du curseur au survol
-    scene.onPointerObservable.add(function (pointerInfo) {
-        if (pointerInfo.type === BABYLON.PointerEventTypes.POINTERMOVE) {
-            var pickResult = scene.pick(scene.pointerX, scene.pointerY);
-            if (pickResult.hit && pickResult.pickedMesh && pickResult.pickedMesh.name.indexOf("box") !== -1) {
+// Click on the sky
+skybox.actionManager = new BABYLON.ActionManager(scene);
+skybox.actionManager.registerAction(new BABYLON.ExecuteCodeAction(BABYLON.ActionManager.OnPickTrigger, function () {
+    window.open("https://scaphydata.com/", "_blank");
+}));
+
+// Changement du curseur au survol
+scene.onPointerObservable.add(function (pointerInfo) {
+    if (pointerInfo.type === BABYLON.PointerEventTypes.POINTERMOVE) {
+        var pickResult = scene.pick(scene.pointerX, scene.pointerY);
+        if (pickResult.hit && pickResult.pickedMesh) {
+            if (pickResult.pickedMesh.name.indexOf("box") !== -1 || pickResult.pickedMesh.name === "skyBox") {
                 canvas.style.cursor = "pointer";
             } else {
                 canvas.style.cursor = "default";
             }
+        } else {
+            canvas.style.cursor = "default";
         }
-    });
+    }
+});
 
     // Lancement de la boucle principale
     scene.onBeforeRenderObservable.add(function () {
