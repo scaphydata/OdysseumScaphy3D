@@ -149,12 +149,6 @@ function runDemo(canvasId) {
     }));
 }
 
-// Click on the sky
-skybox.actionManager = new BABYLON.ActionManager(scene);
-skybox.actionManager.registerAction(new BABYLON.ExecuteCodeAction(BABYLON.ActionManager.OnPickTrigger, function () {
-    window.open("https://scaphydata.com/", "_blank");
-}));
-
 // Changement du curseur au survol
 scene.onPointerObservable.add(function (pointerInfo) {
     if (pointerInfo.type === BABYLON.PointerEventTypes.POINTERMOVE) {
