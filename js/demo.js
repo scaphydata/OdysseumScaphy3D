@@ -10,7 +10,7 @@ function runDemo(canvasId) {
     scene.collisionsEnabled = true;
 
     // Ajout d'une caméra et de son contrôleur
-    var camera = new BABYLON.FreeCamera("MainCamera", new BABYLON.Vector3(0, 2.5, -28), scene);
+    var camera = new BABYLON.FreeCamera("MainCamera", new BABYLON.Vector3(0, 2, 6), scene);
     camera.rotation.y = 0;
     camera.applyGravity = true;
     camera.checkCollisions = true;
@@ -85,6 +85,8 @@ function runDemo(canvasId) {
         { x: -1, z: -2, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
         { x: -10, z: 0, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
         { x: -10, z: -1, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+
+
         { x: -10, z: -2, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
         { x: -10, z: -3, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
         { x: -10, z: -4, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
@@ -106,7 +108,236 @@ function runDemo(canvasId) {
         { x: -6, z: -6, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
         { x: -6, z: -10, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
         { x: -6, z: -7, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
-        { x: -6, z: -5, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" }
+        { x: -6, z: -5, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+
+
+        { x: -10, z: -12, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: -10, z: -13, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: -10, z: -14, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: -10, z: -15, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: -10, z: -16, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: -9, z: -16, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: -8, z: -16, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: -7, z: -16, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: -6, z: -16, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: -5, z: -16, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: -4, z: -16, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: -4, z: -15, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: -4, z: -14, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: -4, z: -13, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: -4, z: -12, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: -4, z: -11, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: -4, z: -10, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: -3, z: -10, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: -2, z: -10, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+
+
+        { x: -4, z: -16, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: -3, z: -16, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: -2, z: -16, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: -1, z: -16, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 0, z: -16, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 1, z: -16, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 2, z: -16, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 3, z: -16, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 3, z: -15, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 3, z: -14, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 3, z: -13, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 3, z: -12, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 3, z: -11, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 3, z: -10, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 2, z: -10, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+
+        { x: 4, z: -10, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 4, z: -16, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 5, z: -16, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 6, z: -16, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 7, z: -16, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 8, z: -16, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 9, z: -16, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 10, z: -16, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 11, z: -16, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 12, z: -16, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 13, z: -16, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 14, z: -16, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+
+        { x: 14, z: -15, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 14, z: -14, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 14, z: -13, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 14, z: -12, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 14, z: -11, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 14, z: -10, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 14, z: -9, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 14, z: -8, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 14, z: -7, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 14, z: -6, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 14, z: -5, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 14, z: -4, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 14, z: -3, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 14, z: -2, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 14, z: -1, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 14, z: -0, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 14, z: 1, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+
+        { x: 13, z: -12, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 12, z: -12, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 11, z: -12, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 10, z: -12, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 10, z: -11, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 10, z: -13, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 10, z: -10, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 10, z: -9, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 10, z: -8, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 9, z: -9, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+
+
+        { x: 15, z: -4, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 14, z: -4, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 13, z: -4, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 12, z: -4, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 11, z: -4, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 10, z: -4, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 10, z: -5, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+
+        { x: 15, z: -2, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 14, z: -2, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 13, z: -2, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 12, z: -2, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 11, z: -2, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 10, z: -2, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+
+        { x: 10, z: -1, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 10, z: 0, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 10, z: 1, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+
+        { x: 14, z: 2, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 14, z: 3, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 14, z: 4, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 14, z: 5, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 14, z: 6, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 14, z: 7, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 14, z: 8, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 14, z: 9, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 14, z: 10, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 14, z: 11, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 14, z: 12, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 14, z: 13, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 14, z: 14, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 14, z: 15, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 14, z: 16, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 14, z: 17, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 14, z: 18, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 14, z: 19, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 14, z: 20, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+
+        { x: 13, z: 6, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 12, z: 6, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 11, z: 6, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 10, z: 6, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+
+        { x: 10, z: 5, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 10, z: 4, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+
+        { x: 13, z: 8, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 12, z: 8, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 11, z: 8, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 10, z: 8, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 10, z: 9, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+
+        { x: 10, z: 11, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 10, z: 12, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 9, z: 12, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+
+
+        { x: 13, z: 14, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 12, z: 14, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 11, z: 14, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+
+        { x: 13, z: 17, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 12, z: 17, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 11, z: 17, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+
+
+        { x: 14, z: 20, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 13, z: 20, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 12, z: 20, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 11, z: 20, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 10, z: 20, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 9, z: 20, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 8, z: 20, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 7, z: 20, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 6, z: 20, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 5, z: 20, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 4, z: 20, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 3, z: 20, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 2, z: 20, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 1, z: 20, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: 0, z: 20, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: -1, z: 20, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: -2, z: 20, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: -3, z: 20, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: -4, z: 20, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: -5, z: 20, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: -6, z: 20, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: -7, z: 20, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: -8, z: 20, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: -9, z: 20, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: -10, z: 20, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+
+
+
+        { x: -10, z: 20, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: -10, z: 19, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: -10, z: 18, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: -10, z: 17, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: -10, z: 16, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: -10, z: 15, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: -10, z: 14, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: -10, z: 13, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: -10, z: 12, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: -10, z: 11, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: -10, z: 10, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: -10, z: 9, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: -10, z: 8, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: -10, z: 7, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: -10, z: 6, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: -10, z: 5, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: -10, z: 4, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: -10, z: 3, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: -10, z: 2, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: -10, z: 1, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" },
+        { x: -10, z: 0, url: "https://scaphydata.com/", image: "images/pierreOdysseum.png" }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
